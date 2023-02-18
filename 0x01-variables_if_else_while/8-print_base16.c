@@ -13,13 +13,13 @@ int main(void)
 	a = 'a';
 	b = '0';
 	while
-		(b <= 'f') {
-			putchar(b);
+		(b < 10) {
+			putchar(b + '0');
 			b++;
 		}
 	while
-		(a < 10) {
-			putchar(a + '0');
+		(a <= 'f') {
+			putchar(a);
 			a++;
 		}
 	putchar('\n');
