@@ -4,10 +4,11 @@
 /*
  * _putchar - writes character to stdout
  * @c: character input
- * Return: Always 0
+ * Return: On success 1.
+ * On error, -1 is returned and errno is set appropriately
  */
 
 int _putchar(char c)
 {
-	return (0);
+	return (write(1, &c, 1));
 }
